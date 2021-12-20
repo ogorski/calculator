@@ -66,7 +66,7 @@ function action(sign) { // primary functions
             prev_op = curr_op;
             break;
     }
-    current_operation = 0;
+    curr_op = 0;
 }
 
 function calculate() { // primary functions
