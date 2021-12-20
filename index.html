@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Calculator on JS</h1>
+    </header>
+    <div class="wrapper">
+        <div class="main">
+            <div class="display">
+                <output type="text" id="output">0</output>
+            </div>
+            <div class="rows">
+                <button id="plusMinus" onclick="plusMinus()">+/-</button>
+                <p>Calculator</p>
+                <button id="allClear" onclick="allClear()">C</button>
+            </div>
+            <div class="rows">
+                <button id="number" onclick="print(7)">7</button>
+                <button id="number" onclick="print(8)">8</button>
+                <button id="number" onclick="print(9)">9</button>
+                <button id="divide" onclick="action('/')">/</button>
+            </div>
+            <div class="rows">
+                <button id="number" onclick="print(4)">4</button>
+                <button id="number" onclick="print(5)">5</button>
+                <button id="number" onclick="print(6)">6</button>
+                <button id="multiply" onclick="action('/')">*</button>
+            </div>
+            <div class="rows">
+                <button id="number" onclick="print(1)">1</button>
+                <button id="number" onclick="print(2)">2</button>
+                <button id="number" onclick="print(3)">3</button>
+                <button id="substract" onclick="action('*')">-</button>
+            </div>
+            <div class="rows">
+                <button id="number" onclick="print(0)">0</button>
+                <button id="dot" onclick="action('.')">.</button>
+                <button id="equate" onclick="calculate()">=</button>
+                <button id="add" onclick="action('+')">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
